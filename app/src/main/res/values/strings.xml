@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">StoryMeow</string>
+    <string name="title_menu1">Fitur yang dapat memuaskan anda</string>
+    <string name="desc_menu1">Fitur yang didesain senyaman mungkin untuk pengguna agar mendapatkan kepuasan yang sempurna dalam mengakses aplikasi.</string>
+    <string name="title_menu2">Banyak story yang seru</string>
+    <string name="desc_menu2">Story yang menarik dan tidak akan membuat anda bosan dan akan membuat anda kecanduan dalam mengakses dan melihat story-story yang ada.</string>
+    <string name="acces_now">Mulai Sekarang</string>
+    <string name="welcome">Selamat datang di StoryMeow!</string>
+    <string name="desc_welcome">Ingin melihat banyak kelakuan lucu,menggemaskan dan menarik dari kucing? Di StoryMeow aja! Disini tempat kamu berkreasi dan show-off kucing kamu sepuasnya.</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="title_login">Sudah siap menjelajahi StoryMeow?</string>
+    <string name="desc_login">Ayo lengkapi dan siap berpetualangan</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_title">Lengkapi data dirimu terlebih dahulu</string>
+    <string name="name">Nama anda</string>
+    <string name="password_error">Password harus lebih dari 8 ya</string>
+    <string name="create_email">Masukkin email kamu</string>
+    <string name="email_error">Coba gunakan email yang valid ya</string>
+    <string name="logout">Logout</string>
+    <string name="tmbl_logout">Tombol Logout</string>
+    <string name="fabUpload">Tombol Unggah Cerita</string>
+    <string name="button_camera">Tombol kamera</string>
+    <string name="camera">Camera</string>
+    <string name="Gallery">Gallery</string>
+    <string name="description">Jangan lupa deskripsinya ya</string>
+    <string name="upload">Unggah</string>
+    <string name="empty_image">Image empty</string>
+    <string name="button_gallery">Tombol gallery</string>
+    <string name="button_upload">Tombol Unggah</string>
+    <string name="button_login">Tombol Masuk</string>
+    <string name="button_daftar">Tombol Daftar</string>
+    <string name="cameraX">Camera X</string>
+    <string name="appwidget_text" tools:ignore="MissingTranslation">STAR WARS BANNER</string>
+    <string name="empty_text" tools:ignore="MissingTranslation">NO DATA</string>
+    <string name="add_widget" tools:ignore="MissingTranslation">Add widget</string>
+    <string name="setting">Pengaturan</string>
+    <string name="tmbl_setting">Tombol Pengaturan</string>
+    <string name="app_widget_description" tools:ignore="MissingTranslation">This is an app widget description</string>
+</resources>

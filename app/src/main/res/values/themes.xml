@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StoryMeow" parent="Theme.Material3.DayNight">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/fade</item>
+        <item name="android:windowExitTransition">@android:transition/fade</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!--        <item name="colorPrimary">@color/white</item>-->
+
+        <!--        <item name="colorSecondary">@color/beige</item>-->
+        <!--        <item name="android:statusBarColor">?attr/colorSecondary</item>-->
+        <!--    </style>-->
+        <!--    <style name="AlertDialogButtonStyle">-->
+        <!--        <item name="alertDialogButtonGroupStyle">@color/brown</item>-->
+    </style>
+
+    <style name="Theme.StoryMeow" parent="Base.Theme.StoryMeow" />
+
+    <style name="Theme.StoryMeow.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="Theme.StoryMeow.AppWidgetContainer" parent="Theme.StoryMeow.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
+    </style>
+</resources>

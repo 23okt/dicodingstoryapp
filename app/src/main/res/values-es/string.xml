@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StoryMeow</string>
+    <string name="title_menu1">Características para Satisfacerte</string>
+    <string name="desc_menu1">Características diseñadas para proporcionar la máxima comodidad al usuario y asegurar una experiencia perfecta al utilizar la aplicación.</string>
+    <string name="title_menu2">Montones de Historias Emocionantes</string>
+    <string name="desc_menu2">Historias cautivadoras que no te aburrirán y te mantendrán adicto a acceder y ver las historias.</string>
+    <string name="acces_now">Comenzar Ahora</string>
+    <string name="welcome">¡Bienvenido a StoryMeow!</string>
+    <string name="desc_welcome">¿Quieres ver muchas travesuras lindas, adorables y fascinantes de gatos? ¡Ven a StoryMeow! Aquí es donde puedes desatar tu creatividad y mostrar a tus gatos a tu gusto.</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="title_login">¿Listo para Explorar StoryMeow?</string>
+    <string name="desc_login">Completemos tu perfil y prepárate para la aventura.</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="register_title">Completa tu Información Primero</string>
+    <string name="name">Tu Nombre</string>
+    <string name="password_error">La contraseña debe tener más de 8 caracteres</string>
+    <string name="create_email">Ingresa tu correo electrónico</string>
+    <string name="email_error">Por favor, utiliza un correo electrónico válido</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="tmbl_logout">Botón de Cerrar Sesión</string>
+    <string name="fabUpload">Botón de Subir Historia</string>
+    <string name="button_camera">Botón de Cámara</string>
+    <string name="camera">Cámara</string>
+    <string name="Gallery">Galería</string>
+    <string name="description">No olvides la descripción</string>
+    <string name="upload">Subir</string>
+    <string name="empty_image">Imagen vacía</string>
+    <string name="setting">Configuración</string>
+    <string name="tmbl_setting">Botón de Configuración</string>
+    <string name="button_gallery">Botón de Galería</string>
+    <string name="button_upload">Botón de Subir</string>
+    <string name="button_login">Botón de Iniciar Sesión</string>
+    <string name="button_daftar">Botón de Registrarse</string>
+    <string name="cameraX">Camera X</string>
+</resources>

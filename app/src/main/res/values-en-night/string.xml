@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StoryMeow</string>
+    <string name="title_menu1">Features to Satisfy You</string>
+    <string name="desc_menu1">Features designed for maximum user comfort to ensure a perfect experience while using the application.</string>
+    <string name="title_menu2">Loads of Exciting Stories</string>
+    <string name="desc_menu2">Engaging stories that wont leave you bored and will keep you addicted to accessing and viewing the stories.</string>
+    <string name="acces_now">Start Now</string>
+    <string name="welcome">Welcome to StoryMeow!</string>
+    <string name="desc_welcome">Want to see lots of cute, adorable, and fascinating cat antics? Just hop over to StoryMeow! This is where you can unleash your creativity and show off your cats to your hearts content.</string>
+    <string name="login">Log In</string>
+    <string name="register">Sign Up</string>
+    <string name="title_login">Ready to Explore StoryMeow?</string>
+    <string name="desc_login">Lets complete your profile and get ready for the adventure.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_title">Complete Your Information First</string>
+    <string name="name">Your Name</string>
+    <string name="cameraX">Camera X</string>
+    <string name="password_error">Password must be more than 8 characters</string>
+    <string name="create_email">Enter your email</string>
+    <string name="email_error">Please use a valid email</string>
+    <string name="logout">Logout</string>
+    <string name="tmbl_logout">Logout Button</string>
+    <string name="fabUpload">Upload Story Button</string>
+    <string name="button_camera">Camera Button</string>
+    <string name="camera">Camera</string>
+    <string name="Gallery">Gallery</string>
+    <string name="description">Dont forget the description</string>
+    <string name="upload">Upload</string>
+    <string name="empty_image">Image empty</string>
+    <string name="button_gallery">Gallery Button</string>
+    <string name="button_upload">Upload Button</string>
+    <string name="button_login">Log In Button</string>
+    <string name="button_daftar">Sign Up Button</string>
+
+</resources>
