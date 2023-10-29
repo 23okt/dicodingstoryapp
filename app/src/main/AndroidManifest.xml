@@ -22,6 +22,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StoryMeow"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCw4spizOBSrxTpEPLzQbsBuaoRyHDgqLA" />
+        <activity
+            android:name=".view.maps.MapsActivity"
+            android:exported="true">
+        </activity>
+
         <receiver
             android:name=".widget.ImageBannerWidget"
             android:exported="false">
@@ -87,10 +95,9 @@
             <meta-data
                 android:name="photopicker_activity:0:required"
                 android:value="" />
-
         </service>
         <service
-            android:name="com.example.storymeow.widget.StackWidgetService"
+            android:name=".widget.StackWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
     </application>
 

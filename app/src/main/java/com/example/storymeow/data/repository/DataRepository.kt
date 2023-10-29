@@ -2,7 +2,12 @@ package com.example.storymeow.data.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.PagingData
+import androidx.paging.liveData
 import com.example.storymeow.data.Result
+import com.example.storymeow.data.paging.StoryPagingSource
 import com.example.storymeow.data.response.ErrorResponse
 import com.example.storymeow.data.response.ListStoryItem
 import com.example.storymeow.data.response.LoginResponse
@@ -101,6 +106,28 @@ class DataRepository(
         }catch (e: Exception){
             emit(Result.Error(e.message ?: "Error"))
         }
+    }
+
+
+    fun getLocation(): LiveData<Result<List<ListStoryItem>>> = liveData {
+        emit(Result.Loading)
+        try {
+            val response = apiService.getStoriesWithLocation()
+            emit(Result.Success(response.listStory))
+        }catch (e: Exception){
+            emit(Result.Error(e.message ?: "Error"))
+        }
+    }
+
+    fun getPaging(): LiveData<PagingData<ListStoryItem>>{
+        return Pager(
+            config = PagingConfig(
+                pageSize = 5
+            ),
+            pagingSourceFactory = {
+                StoryPagingSource(apiService)
+            }
+        ).liveData
     }
 
     suspend fun saveSession(user: UserModel){

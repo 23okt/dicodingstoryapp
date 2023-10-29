@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.util.Pair
+import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.storymeow.data.response.ListStoryItem
@@ -15,7 +15,7 @@ import com.example.storymeow.databinding.ItemStoryBinding
 import com.example.storymeow.view.detail.DetailActivity
 
 
-class StoryAdapter: ListAdapter<ListStoryItem, StoryAdapter.ViewHolder>(DIFF_CALLBACK){
+class StoryAdapter: PagingDataAdapter<ListStoryItem, StoryAdapter.ViewHolder>(DIFF_CALLBACK){
 
     companion object{
         val DIFF_CALLBACK = object : DiffUtil.ItemCallback<ListStoryItem>(){
@@ -63,6 +63,8 @@ class StoryAdapter: ListAdapter<ListStoryItem, StoryAdapter.ViewHolder>(DIFF_CAL
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val story = getItem(position)
-        holder.bind(story)
+        if (story != null) {
+            holder.bind(story)
+        }
     }
 }

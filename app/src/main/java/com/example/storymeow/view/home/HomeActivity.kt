@@ -13,11 +13,13 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.storymeow.R
+import com.example.storymeow.adapter.LoadingStateAdapter
 import com.example.storymeow.adapter.StoryAdapter
 import com.example.storymeow.data.Result
 import com.example.storymeow.databinding.ActivityHomeBinding
 import com.example.storymeow.view.ViewModelFactory
 import com.example.storymeow.view.camera.CameraActivity
+import com.example.storymeow.view.maps.MapsActivity
 import com.example.storymeow.view.welcome.WelcomeActivity
 import kotlinx.coroutines.launch
 
@@ -71,12 +73,22 @@ class HomeActivity : AppCompatActivity() {
 
                     is Result.Success -> {
                         binding.progressHome.visibility = View.INVISIBLE
-                        val adapter = StoryAdapter()
-                        adapter.submitList(story.data)
-                        binding.homeRecyclerView.adapter = adapter
+                        getData()
                     }
                 }
             }
+        }
+    }
+
+    private fun getData(){
+        val adapter = StoryAdapter()
+        binding.homeRecyclerView.adapter = adapter.withLoadStateFooter(
+            footer = LoadingStateAdapter{
+                adapter.retry()
+            }
+        )
+        viewModel.paging.observe(this){
+            adapter.submitData(lifecycle,it)
         }
     }
 
@@ -87,6 +99,9 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
+            R.id.maps->{
+                startActivity(Intent(this@HomeActivity,MapsActivity::class.java))
+            }
             R.id.logout -> {
                 lifecycleScope.launch {
                     viewModel.logout()

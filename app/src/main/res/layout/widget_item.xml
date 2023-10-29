@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        tools:srcCompat="@tools:sample/avatars"/>
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
 
 
 </LinearLayout>

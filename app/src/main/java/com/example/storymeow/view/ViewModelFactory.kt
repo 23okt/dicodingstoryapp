@@ -8,6 +8,7 @@ import com.example.storymeow.data.repository.DataRepository
 import com.example.storymeow.view.camera.CameraViewModel
 import com.example.storymeow.view.home.HomeViewModel
 import com.example.storymeow.view.login.LoginViewModel
+import com.example.storymeow.view.maps.MapsViewModel
 import com.example.storymeow.view.register.RegisterViewModel
 
 @Suppress("UNCHECKED_CAST")
@@ -25,6 +26,9 @@ class ViewModelFactory(private val repository: DataRepository): ViewModelProvide
             }
             modelClass.isAssignableFrom(CameraViewModel::class.java)->{
                 CameraViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(MapsViewModel::class.java)->{
+                MapsViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class:" + modelClass.name)
         }

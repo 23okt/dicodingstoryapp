@@ -83,7 +83,7 @@
             android:ems="10"
             android:hint="@string/create_email"
             android:inputType="textEmailAddress"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -119,7 +119,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -136,7 +136,8 @@
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordLayout"/>
+        app:layout_constraintTop_toBottomOf="@id/passwordLayout"
+        tools:ignore="VisualLintButtonSize" />
 
 
     <androidx.constraintlayout.widget.Guideline

@@ -60,8 +60,6 @@ class CameraActivity : AppCompatActivity() {
         binding.buttonCamera.setOnClickListener { startCamera() }
         binding.buttonUpload.setOnClickListener { uploadImage() }
         binding.buttonCamerax.setOnClickListener { startCameraX() }
-
-
     }
     private fun startGallery(){
         launcherGallery.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))

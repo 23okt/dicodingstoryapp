@@ -35,5 +35,12 @@
     <string name="button_upload">Upload Button</string>
     <string name="button_login">Log In Button</string>
     <string name="button_daftar">Sign Up Button</string>
-
+    <string name="appwidget_text">STAR WARS BANNER</string>
+    <string name="empty_text">NO DATA</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="maps">Maps</string>
+    <string name="retry">Retry</string>
+    <string name="button_maps">Maps Button</string>
 </resources>

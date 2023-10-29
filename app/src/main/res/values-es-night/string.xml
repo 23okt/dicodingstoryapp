@@ -33,4 +33,12 @@
     <string name="button_login">Botón de Iniciar Sesión</string>
     <string name="button_daftar">Botón de Registrarse</string>
     <string name="cameraX">Camera X</string>
+    <string name="appwidget_text">BANNER DE STAR WARS</string>
+    <string name="empty_text">SIN DATOS</string>
+    <string name="add_widget">Agregar widget</string>
+    <string name="app_widget_description">Esta es una descripción del widget de la aplicación</string>
+    <string name="title_activity_maps">Actividad de mapas</string>
+    <string name="maps">Mapas</string>
+    <string name="retry">Reintentar</string>
+    <string name="button_maps">Botón de mapas</string>
 </resources>

@@ -15,7 +15,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"/>
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="ContentDescription" />
     <TextView
         android:id="@+id/titleMenu1"
         android:layout_width="0dp"
@@ -50,7 +51,8 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3"
-        android:src="@drawable/kucing2" />
+        android:src="@drawable/kucing2"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/titleMenu2"

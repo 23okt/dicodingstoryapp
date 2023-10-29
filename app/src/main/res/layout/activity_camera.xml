@@ -22,7 +22,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/baseline_image_24"/>
+            app:srcCompat="@drawable/baseline_image_24"
+            tools:ignore="ContentDescription" />
 
         <Button
             android:id="@+id/buttonCamera"
@@ -37,7 +38,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/buttonGallery"
-            app:layout_constraintTop_toBottomOf="@+id/imageCamera" />
+            app:layout_constraintTop_toBottomOf="@+id/imageCamera"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/buttonGallery"
@@ -51,7 +53,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/buttonCamera"
             app:layout_constraintEnd_toStartOf="@+id/buttonCamera"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/buttonCamera"/>
+            app:layout_constraintTop_toTopOf="@id/buttonCamera"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/buttonCamerax"
@@ -64,7 +67,8 @@
             app:layout_constraintBottom_toTopOf="@id/textField"
             android:layout_width="match_parent"
             android:backgroundTint="@color/brown"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            tools:ignore="VisualLintButtonSize" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textField"
@@ -80,11 +84,12 @@
                 android:id="@+id/editDeskripsi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/description"
                 android:inputType="textMultiLine"
                 android:lines="7"
                 android:textColor="@color/brown"
-                android:gravity="top|start"
-                android:hint="@string/description"/>
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -99,7 +104,8 @@
             android:layout_width="match_parent"
             app:layout_constraintStart_toStartOf="parent"
             android:backgroundTint="@color/brown"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            tools:ignore="VisualLintButtonSize" />
 
         <ProgressBar
             android:id="@+id/progressBar"
