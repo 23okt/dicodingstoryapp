@@ -25,7 +25,6 @@ class StoryPagingSource(private val apiService: ApiService): PagingSource<Int, L
             return LoadResult.Error(e)
         }
     }
-
     override fun getRefreshKey(state: PagingState<Int, ListStoryItem>): Int? {
         return state.anchorPosition?.let { anchor->
             val anchorPage = state.closestPageToPosition(anchor)

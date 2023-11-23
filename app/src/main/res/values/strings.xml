@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">StoryMeow</string>
     <string name="title_menu1">Fitur yang dapat memuaskan anda</string>
     <string name="desc_menu1">Fitur yang didesain senyaman mungkin untuk pengguna agar mendapatkan kepuasan yang sempurna dalam mengakses aplikasi.</string>

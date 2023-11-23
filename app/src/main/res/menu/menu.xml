@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/maps"
-        android:icon="@drawable/baseline_map_24"
+        android:icon="@drawable/baseline_image_24"
         android:title="@string/maps"
         android:contentDescription="@string/button_maps"
         app:showAsAction="ifRoom"/>

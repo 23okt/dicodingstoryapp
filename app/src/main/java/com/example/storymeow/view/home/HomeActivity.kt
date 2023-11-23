@@ -75,6 +75,7 @@ class HomeActivity : AppCompatActivity() {
                         binding.progressHome.visibility = View.INVISIBLE
                         getData()
                     }
+                    else -> {}
                 }
             }
         }
